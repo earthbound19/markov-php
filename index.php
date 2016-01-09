@@ -63,8 +63,8 @@ if (isset($_POST['submit'])) {
             <option value="kant">The Critique of Pure Reason by Immanuel Kant</option>
         </select>
         <br />
-        <label for="order">Order</label>
-        <input type="text" name="order" value="8" />
+        <label for="order">"Coherence" (number of words examined per iteration)</label>
+        <input type="text" name="order" value="9" />
         <label for="length">Text size of output</label>
         <input type="text" name="length" value="1360" />
         <br />
@@ -80,7 +80,9 @@ m=""; for (i=0; i<s.length; i++) {	if(s.charCodeAt(i) == 28){	  m+= '&';} else i
 <h3>Kožarić wrote, "Plaster casts should be viewed as heroes, not pariahs."</h3>
 <p>--This here gibberish generator.
 <h3>. . . also interrogates how artists choose to perform martyrdom for the helpless victim of gun violence.</h3>
-~
+<p>~</p>
+<h3> I often base these characters on my family and friends, intertwining the complex relations between societies, understanding between abstract segments. The autopsy has already been performed, so the body is in the footsteps of the great masters of the exterior / physical body. The hand . . . as mediator to the act of painting, was drowning. I was five. A sunny August day, sitting and absorbed in her thoughts; she's observed by her own eyes appearing through the action of painting over to a technical, material discourse and thus to an ‘expressive' discourse filtered through the union movement or community group.</h3>
+<p>~</p>
 </div> <!-- /wrapper -->
 </body>
 </html>
