@@ -7,7 +7,7 @@
 
 require 'markov.php';
 
-$texts = array("IAE_1", "IAE_2", "IAE_3", "alice", "calvin", "kant");
+$texts = array("IAE", "alice", "calvin", "kant");
 
 if (isset($_POST['submit'])) {
     // generate text with markov library
@@ -39,10 +39,9 @@ if (isset($_POST['submit'])) {
 <body>
 <div id="wrapper">
     <h1>Markov gibberish generator (International Art English edition)</h1>
-    <p>This is a very simple Markov chain text generator. Try it below by entering some
-    text or by selecting one of the pre-selected texts available. </p>
+    <p>This is a very simple Markov chain text generator. Try it below by pushing the GO button (with the pre-selected source text in the drop down), or by selecting the "Paste any text.." option and pasting something into the "Input text" form.</p>
     <p>The source code of this generator is available under the terms of the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>. See the original posting on this generator <a href="http://www.haykranen.nl/projects/markov">here</a>.</p>
-	<p>This fork adds a (huge) source corpus of <a href="https://www.canopycanopycanopy.com/contents/international_art_english">International Art English</a> (IAE), collected by Richard Alexander Hall. You may find that it generates paragraphs which only require a bit of editing to make them as "coherent" as so much that you've seen (and, if you're me, been very annoyed at) in museums. Want an "Artist Statement?" Click the "GO" button, copy, paste, and edit a bit. Done! This forked code available <a href="https://github.com/r-alex-hall/markov-php">yon</a>.</p>
+	<p>This fork adds a (quite large) source corpus of <a href="https://www.canopycanopycanopy.com/contents/international_art_english">International Art English</a> (IAE), collected by Richard Alexander Hall. You may find that it generates paragraphs which only require a bit of editing to make them as "coherent" as so much that you've seen (and, if you're me, been very annoyed at) in museums. Want an "Artist Statement?" The GO button is your friend. Copy, paste, and edit a bit. Done! This forked code available <a href="https://github.com/r-alex-hall/markov-php">yon</a>.</p>
 
     <?php if (isset($markov)) : ?>
         <h2>Output text</h2>
@@ -54,21 +53,20 @@ if (isset($_POST['submit'])) {
         <textarea rows="15" cols="100" name="input"></textarea>
         <br />
         <select name="text">
-			<option value="IAE_1">International Art English (1), by weirdos worldwide</option>
-			<option value="IAE_2">International Art English (2), by weirdos worldwide</option>
-			<option value="IAE_3">International Art English (3), by weirdos worldwide</option>
+			<option value="IAE">International Art English, by weirdos worldwide</option>
             <option value="">Paste any text into the "input text" as the source</option>
             <option value="alice">Alice's Adventures in Wonderland, by Lewis Carroll</option>
             <option value="calvin">The Wikipedia article on Calvin and Hobbes</option>
             <option value="kant">The Critique of Pure Reason by Immanuel Kant</option>
         </select>
         <br />
-        <label for="order">"Coherence" (number of words examined per iteration)</label>
+        <label for="order">Order</label>
         <input type="text" name="order" value="9" />
         <label for="length">Text size of output</label>
         <input type="text" name="length" value="1360" />
         <br />
         <input type="submit" name="submit" value="GO" />
+		<label for="submit">Please be sparing with generating IAE; it could put a load on my server. K THX BAI!</label>
     </form>
 	
 <p>Click these links to go to the <a href="http://earthbound.io">earthbound.io</a> home page or <a href="http://earthbound.io/blog">blog.</a></p>

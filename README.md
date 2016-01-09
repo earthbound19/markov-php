@@ -2,7 +2,7 @@
 A very simple Markov chain text generator, which means that you can feed it a source text (or corpus) and it will generate statistically similar but wholly different gibberish "sentences" composing one or more paragraphs (perhaps to be called a corpse, the result of carefully butchering the input).
 
 ## USAGE
-Coded in php; upload the files and folders in this repository to your own web server and navigate to the page to use it.
+Coded in php; upload the files and folders in this repository to your own web server and navigate to the page to use it. NOTE: To make use of the default script option ("International Art English by weirdows worldwide"), you may need to adjust the memory and maximum post size, etc. substantially in your php.ini, because the corpus (source) text it recombobulates is 575KB, at this writing, and could get a lot larger).
 
 ## LIVE PAGE
 <a href="http://earthbound.io/international-art-english-markov-generator-php/">http://earthbound.io/international-art-english-markov-generator-php/</a>
