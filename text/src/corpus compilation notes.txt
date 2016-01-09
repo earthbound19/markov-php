@@ -1,0 +1,25 @@
+The corpuses in this folder were concatenated into one file via:
+
+cat * > temp1.txt
+
+-- then the lines were randomly shuffled (each paragraph is on one line) via:
+
+shuf temp1.txt > temp2.txt
+
+-- then split into ~ equal size files via:
+
+split ./temp2.txt -C 192K
+
+-- then renamed into IAE_1.txt, ~2.txt and so on (however many I wind up with here).
+
+The corpuses themselves were variously gathered via HTTrack and wget; in the latter case from e-flux with:
+
+wget --mirror -N -p --html-extension --convert-links -k -d -np -U -L/--relative -r -l -A html -R jpg,gif,png,tif,tiff -D www.e-flux.com -I archive,announcements http://www.e-flux.com
+
+--which command took a *full day* to extract all the html from the /announcements folder at that domain, and at this writing the odds of programmatically/editorial getting all the juicy IAE nonsense bits from all 15,163 (?!) resulting html announcements--yeah, the odds are against someone who is supposed to have, uh, a life. Perhaps it could be done 10 minutes a day for a decade.
+
+And the folks posting so much over so many years at e-flux . . . what have they accomplished? A sane world would forget nearly all of it if not all . . .
+
+The International Art English writings collected in this corpus are used for educational purposes only. Oh, wait, and farcical purposes. The education is in what artists should avoid writing about their work. They should avoid writing vapid philosophical claptrap such as that here collected. Farcical purposes, because I propose that the only healthy way to respond to writing like that is to laugh at it, and contrive your own using a computer gibberish generator just to show that unintelligent computers can write (nearly if not always) equally "well," given the right fodder and algorithm.
+
+01/08/2016 10:42:28 PM -RAH

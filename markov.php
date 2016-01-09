@@ -3,6 +3,8 @@
     PHP Markov Chain text generator 1.0
     Copyright (c) 2008-2010, Hay Kranen <http://www.haykranen.nl/projects/markov/>
     Fork on Github: < http://github.com/hay/markov >
+	
+	Modified to include an International Art English corpus by Richard Alexander Hall <http://earthbound.io/>
     
     License (MIT / X11 license)    
     
